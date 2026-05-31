@@ -1,0 +1,19 @@
+appId: com.example.maestroTest
+
+---
+
+- launchApp
+
+- tapOn: "Login"
+
+- assertVisible: "Please fill in all fields"
+
+- tapOn: "Email"
+- inputText: "user1234"
+
+- tapOn: "Password"
+- inputText: "1234"
+
+- tapOn: "Login"
+
+- assertVisible: "Dashboard"

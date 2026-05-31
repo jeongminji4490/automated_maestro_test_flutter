@@ -1,0 +1,16 @@
+appId: com.example.maestroTest
+
+---
+
+- openLink: "myapp://dashboard"
+
+- tapOn: "Search fruits..."
+- inputText: "Durian"
+
+- tapOn: "Search"
+
+- assertVisible: "Durian"
+
+- assertNotVisible: "Apple"
+
+- assertNotVisible: "Banana"
