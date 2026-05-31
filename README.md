@@ -23,9 +23,6 @@ The goal is to reduce manual effort involved in writing Maestro YAML files, runn
 | Mobile App | Flutter |
 | Test Automation | Maestro |
 
-## Architecture
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/bd3cf4aa-0067-4fe2-a0e7-bfdcb5677104" />
-
 
 ## ✨ Key Features
 
@@ -35,8 +32,8 @@ The goal is to reduce manual effort involved in writing Maestro YAML files, runn
 python3 cli.py \
   --intent "Start dashboard page test. Search text 'Search fruits...' and enter Durian. Click search button and verify Durian is visible." \
   --app-id "com.example.maestroTest" \
-  --deep-link "myapp://dashboard" \
-  --test-name "dashboard_test"
+  --deep-link "myapp://dashboard" \ # screen url you want to test
+  --test-name "dashboard_test" # file name you want to use
 ```
 
 ### Maestro Test file Generation
@@ -60,6 +57,10 @@ The Planner Agent converts user intent into structured JSON, and the Generator A
 - Parse Maestro execution logs
 - Extract failed steps
 - Generate summarized test results
+
+## Architecture
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/e6fd25f5-c48f-4af3-a704-66d0d84e7fb6" />
+
 
 ## Agent Orchestration
 
