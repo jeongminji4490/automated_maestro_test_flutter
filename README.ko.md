@@ -111,6 +111,8 @@ automated_maestro_test_flutter/
     }
 ```
 
+- LLM이 YAML 파일을 직접 생성할수도 있지만, 잘못된 형식의 파일이 생성될 확률 존재 → 따라서 LLM은 프롬프트만 해석해서 구조화된 JSON 응답만을 반환하고, YAML 생성은 코드(Generator Agent)에서 완전히 결정론적으로 처리하도록 설계
+
 ### Generator Agent + Generation Validator
 
 - Planner Agent가 반환한 JSON 응답을 파싱
